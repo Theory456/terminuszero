@@ -1,5 +1,5 @@
-SMODS.Joker{ --The Slave
-    key = "theslave",
+SMODS.Joker{ --Slave Camp
+    key = "slavecamp",
     config = {
         extra = {
             scaling = 0,
@@ -10,7 +10,7 @@ SMODS.Joker{ --The Slave
         }
     },
     loc_txt = {
-        ['name'] = 'The Slave',
+        ['name'] = 'Slave Camp',
         ['text'] = {
             [1] = 'Played 2s through 5s give {C:blue}+5{} Chips',
             [2] = '{C:attention}per rank{} they have when scored'
