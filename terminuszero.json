@@ -1,0 +1,17 @@
+{
+  "id": "terminuszero",
+  "name": "Terminus Zero",
+  "author": [
+    "Turnabout Theory"
+  ],
+  "description": "If the late POLTERWORX were a line that extends out to where it's over, Terminus would be its asymptote there. Ever striving to bear the impossibility of the Almanac, yet becoming something of its own.",
+  "prefix": "terminus",
+  "main_file": "Terminus.lua",
+  "version": "0.0.0",
+  "priority": 0,
+  "badge_colour": "403820",
+  "badge_text_colour": "FFFFFF",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0711a)"
+  ]
+}
