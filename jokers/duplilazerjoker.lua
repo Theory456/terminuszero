@@ -37,7 +37,7 @@ SMODS.Joker{ --Duplilazer Joker
             if true then
                 if SMODS.pseudorandom_probability(card, 'group_0_5f3b949b', 1, card.ability.extra.odds, 'j_terminus_duplilazerjoker') then
                       SMODS.calculate_effect({func = function()
-                    card.ability.extra.jscale = (card.ability.extra.jscale) * 2
+                    card.ability.extra.jscale = (card.ability.extra.jscale) * 8
                     return true
                 end}, card)
                   end

@@ -12,7 +12,7 @@ SMODS.Joker{ --Phinary Joker
             [2] = 'Ace, 2, 3, 5 and 8 determines the',
             [3] = 'next card scored in order to',
             [4] = 'scale this Joker by an extra {C:blue}+10{}',
-            [5] = '{C:inactive}(Currently: #1# and {C:blue}+#2# {}{C:inactive}Chips){}'
+            [5] = '{C:inactive}(Currently: #2# and {C:blue}+#1# {}{C:inactive}Chips){}'
         }
     },
     pos = {
