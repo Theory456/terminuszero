@@ -12,8 +12,8 @@ SMODS.Joker{ --Heat Death
             [1] = '{X:enhanced,C:white}^1{} Mult every year away from',
             [2] = 'the {C:attention}Balatro Gameplay Update{} you are in',
             [3] = '{C:inactive}(Currently: {}{X:enhanced,C:white}^#1#{}{C:inactive} Mult){}',
-            [4] = '{C:inactive}(Archaeologists found two {X:legendary,C:white}Infinite{} {C:inactive}Jokers',
-            [5] = 'in what used to be the mod author\'s house.)'
+            [4] = '{C:inactive}(Archaeologists found two {}{X:legendary,C:white}Infinite{} {C:inactive}Jokers',
+            [5] = '{C:inactive}in what used to be the mod author\'s house.){}'
         }
     },
     pos = {
