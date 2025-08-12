@@ -12,6 +12,9 @@ SMODS.Joker{ --Gigatron Joker
         ['text'] = {
             [1] = 'Repeat poker hands give {X:red,C:white}X2{} Mult',
             [2] = 'and {C:money}$2{} when scored'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {

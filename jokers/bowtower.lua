@@ -1,5 +1,5 @@
-SMODS.Joker{ --Crossbow Tower
-    key = "crossbowtower",
+SMODS.Joker{ --Bow Tower
+    key = "bowtower",
     config = {
         extra = {
             hands = 1,
@@ -7,13 +7,16 @@ SMODS.Joker{ --Crossbow Tower
         }
     },
     loc_txt = {
-        ['name'] = 'Crossbow Tower',
+        ['name'] = 'Bow Tower',
         ['text'] = {
             [1] = '{C:attention}Two Pairs{} won\'t cost {C:attention}hands{}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 6,
+        x = 3,
         y = 0
     },
     cost = 4,

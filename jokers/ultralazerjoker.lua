@@ -11,6 +11,9 @@ SMODS.Joker{ --Ultralazer Joker
         ['text'] = {
             [1] = '{C:green}#1# in #2#{} chance for {X:blue,C:white}^1.2{} Chips',
             [2] = '{C:inactive}(Yes, this is really lazey.){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {

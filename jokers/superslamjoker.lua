@@ -10,10 +10,13 @@ SMODS.Joker{ --Superslam Joker
         ['text'] = {
             [1] = '{C:red}+10{} Mult per hand played',
             [2] = '{C:inactive}(Currently: {}{C:red}+#1# {}{C:inactive}Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 2,
+        x = 0,
         y = 4
     },
     cost = 4,

@@ -11,6 +11,9 @@ SMODS.Joker{ --Barricades
         ['text'] = {
             [1] = 'Scored cards have a {C:green}#1# in #2#{}',
             [2] = 'chance to give {C:red}+4{} Mult'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {

@@ -11,11 +11,14 @@ SMODS.Joker{ --s6 llA !spoO
         ['text'] = {
             [1] = 'Doubles all {C:attention}listed{} {C:green}probabilities{}',
             [2] = '(ex: {C:green}1 in 3{} -> {C:green}1 in 1.5{})'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 2,
-        y = 3
+        x = 7,
+        y = 2
     },
     cost = 4,
     rarity = 2,

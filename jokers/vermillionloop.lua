@@ -10,10 +10,13 @@ SMODS.Joker{ --Vermillion Loop
         ['text'] = {
             [1] = '{C:blue}+Chips{} equal to the {C:attention}current second{}',
             [2] = '{C:inactive}(Currently: {}{C:blue}+#1#{} {C:inactive}Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 1,
+        x = 2,
         y = 5
     },
     cost = 3,

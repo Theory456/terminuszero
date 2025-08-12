@@ -10,11 +10,14 @@ SMODS.Joker{ --Stronger Joker
         ['text'] = {
             [1] = '{C:red}+1{} Mult, scales by {X:attention,C:white}X1.62{}',
             [2] = 'when {C:attention}Blind{} is skipped'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 1,
-        y = 4
+        x = 9,
+        y = 3
     },
     cost = 8,
     rarity = 1,

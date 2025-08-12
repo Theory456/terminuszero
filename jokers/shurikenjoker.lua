@@ -1,22 +1,25 @@
-SMODS.Joker{ --Royal Goods Inc.
-    key = "royalgoodsinc",
+SMODS.Joker{ --Shuriken Joker
+    key = "shurikenjoker",
     config = {
         extra = {
-            Xmult = 1.4
+            mult = 10
         }
     },
     loc_txt = {
-        ['name'] = 'Royal Goods Inc.',
+        ['name'] = 'Shuriken Joker',
         ['text'] = {
-            [1] = 'Played 10s through Aces give {X:red,C:white}X1.4{} Mult'
+            [1] = 'Played 10s through Aces give {C:red}+10{} Mult'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 1,
+        x = 0,
         y = 3
     },
-    cost = 10,
-    rarity = 2,
+    cost = 5,
+    rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -28,7 +31,7 @@ SMODS.Joker{ --Royal Goods Inc.
         if context.individual and context.cardarea == G.play  then
             if (context.other_card:get_id() == 10 or (context.other_card:is_face() or context.other_card:get_id() == 14)) then
                 return {
-                    Xmult = card.ability.extra.Xmult
+                    mult = card.ability.extra.mult
                 }
             end
         end

@@ -10,10 +10,13 @@ SMODS.Joker{ --Converter
         ['name'] = 'Converter',
         ['text'] = {
             [1] = '{X:blue,C:white}X0.5{} Chips, but {X:red,C:white}X2{} Mult'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 2,
+        x = 4,
         y = 0
     },
     cost = 4,

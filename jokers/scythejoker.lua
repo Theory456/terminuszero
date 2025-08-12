@@ -1,5 +1,5 @@
-SMODS.Joker{ --Slave Camp
-    key = "slavecamp",
+SMODS.Joker{ --Scythe Joker
+    key = "scythejoker",
     config = {
         extra = {
             scaling = 0,
@@ -10,15 +10,18 @@ SMODS.Joker{ --Slave Camp
         }
     },
     loc_txt = {
-        ['name'] = 'Slave Camp',
+        ['name'] = 'Scythe Joker',
         ['text'] = {
             [1] = 'Played 2s through 5s give {C:blue}+5{} Chips',
             [2] = '{C:attention}per rank{} they have when scored'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 5,
-        y = 3
+        x = 9,
+        y = 2
     },
     cost = 2,
     rarity = 1,

@@ -10,10 +10,13 @@ SMODS.Joker{ --Superstick Joker
         ['text'] = {
             [1] = '{X:red,C:white}XMult{} equal to the rank of',
             [2] = 'the leftmost card'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 5,
+        x = 3,
         y = 4
     },
     cost = 8,

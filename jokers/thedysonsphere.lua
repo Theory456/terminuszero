@@ -3,16 +3,16 @@ SMODS.Joker{ --The Dyson Sphere
     config = {
         extra = {
             Xmult = 2,
-            Xmult2 = 3,
+            Xmult2 = 6,
             Xmult3 = 3,
             Xmult4 = 2,
-            Xmult5 = 4,
-            Xmult6 = 3.5,
-            Xmult7 = 2.5,
-            Xmult8 = 5,
-            Xmult9 = 5,
-            Xmult10 = 9,
-            Xmult11 = 9,
+            Xmult5 = 24,
+            Xmult6 = 52.5,
+            Xmult7 = 5,
+            Xmult8 = 120,
+            Xmult9 = 30,
+            Xmult10 = 2160,
+            Xmult11 = 945,
             Xmult12 = 1
         }
     },
@@ -22,10 +22,13 @@ SMODS.Joker{ --The Dyson Sphere
             [1] = 'Apply all {C:rare}Rare{} Joker effects',
             [2] = 'with the same theme as this card',
             [3] = 'on Vanilla hands only'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 6,
+        x = 5,
         y = 4
     },
     cost = 20,
@@ -39,73 +42,62 @@ SMODS.Joker{ --The Dyson Sphere
 
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-            if next(context.poker_hands["Pair"]) then
+            if context.scoring_name == "Pair" then
                 return {
                     Xmult = card.ability.extra.Xmult,
                     message = "Duo!"
                 }
-            end
-            if next(context.poker_hands["Three of a Kind"]) then
+            elseif context.scoring_name == "Three of a Kind" then
                 return {
                     Xmult = card.ability.extra.Xmult2,
                     message = "Trio!"
                 }
-            end
-            if next(context.poker_hands["Straight"]) then
+            elseif context.scoring_name == "Straight" then
                 return {
                     Xmult = card.ability.extra.Xmult3,
                     message = "Order!"
                 }
-            end
-            if next(context.poker_hands["Flush"]) then
+            elseif context.scoring_name == "Flush" then
                 return {
                     Xmult = card.ability.extra.Xmult4,
                     message = "Tribe!"
                 }
-            end
-            if next(context.poker_hands["Four of a Kind"]) then
+            elseif context.scoring_name == "Four of a Kind" then
                 return {
                     Xmult = card.ability.extra.Xmult5,
                     message = "Family!"
                 }
-            end
-            if next(context.poker_hands["Full House"]) then
+            elseif context.scoring_name == "Full House" then
                 return {
                     Xmult = card.ability.extra.Xmult6,
                     message = "Home!"
                 }
-            end
-            if next(context.poker_hands["Two Pair"]) then
+            elseif context.scoring_name == "Two Pair" then
                 return {
                     Xmult = card.ability.extra.Xmult7,
                     message = "Duos!"
                 }
-            end
-            if next(context.poker_hands["Five of a Kind"]) then
+            elseif context.scoring_name == "Five of a Kind" then
                 return {
                     Xmult = card.ability.extra.Xmult8,
                     message = "Quintet!"
                 }
-            end
-            if next(context.poker_hands["Straight Flush"]) then
+            elseif context.scoring_name == "Straight Flush" then
                 return {
                     Xmult = card.ability.extra.Xmult9,
                     message = "Nuts!"
                 }
-            end
-            if next(context.poker_hands["Flush Five"]) then
+            elseif context.scoring_name == "Flush Five" then
                 return {
                     Xmult = card.ability.extra.Xmult10,
                     message = "Swarm!"
                 }
-            end
-            if next(context.poker_hands["Flush House"]) then
+            elseif context.scoring_name == "Flush House" then
                 return {
                     Xmult = card.ability.extra.Xmult11,
                     message = "Unity!"
                 }
-            end
-            if next(context.poker_hands["High Card"]) then
+            elseif context.scoring_name == "High Card" then
                 return {
                     Xmult = card.ability.extra.Xmult12,
                     message = "Filler!"

@@ -9,8 +9,11 @@ SMODS.Joker{ --Barracks
     loc_txt = {
         ['name'] = 'Barracks',
         ['text'] = {
-            [1] = 'Discarding one card of each',
-            [2] = 'suit won\'t cost {C:attention}discards{}'
+            [1] = 'Discarding cards of all four vanilla',
+            [2] = 'suits will not cost {C:attention}discards{}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
@@ -36,7 +39,7 @@ SMODS.Joker{ --Barracks
         end
     end
     
-    return suitCount == 1
+    return suitCount >= 1
 end)() and (function()
     local suitCount = 0
     for i, c in ipairs(context.full_hand) do
@@ -45,7 +48,7 @@ end)() and (function()
         end
     end
     
-    return suitCount == 1
+    return suitCount >= 1
 end)() and (function()
     local suitCount = 0
     for i, c in ipairs(context.full_hand) do
@@ -54,7 +57,7 @@ end)() and (function()
         end
     end
     
-    return suitCount == 1
+    return suitCount >= 1
 end)() and (function()
     local suitCount = 0
     for i, c in ipairs(context.full_hand) do
@@ -63,7 +66,7 @@ end)() and (function()
         end
     end
     
-    return suitCount == 1
+    return suitCount >= 1
 end)()) then
                 return {
                     func = function()

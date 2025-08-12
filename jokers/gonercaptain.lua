@@ -13,10 +13,13 @@ SMODS.Joker{ --Goner Captain
             [1] = 'Played 5s. 7s and 10s give {X:enhanced,C:white}^1.1{} Mult',
             [2] = 'with an extra additive {X:enhanced,C:white}^0.01{} Mult',
             [3] = '{C:attention}per rank{} they have when scored'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 7,
+        x = 6,
         y = 1
     },
     cost = 10,

@@ -12,10 +12,13 @@ SMODS.Joker{ --Quadruplicator Joker
             [1] = '{X:blue,C:white}X1{} Chips, {C:green}#2# in #3#{} chance for',
             [2] = '{X:attention,C:white}X4{} at the end of every shop',
             [3] = '{C:inactive}(Currently: {} {X:blue,C:white}X#1#{}{C:inactive} Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 9,
+        x = 5,
         y = 2
     },
     cost = 5,

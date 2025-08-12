@@ -9,11 +9,14 @@ SMODS.Joker{ --Sticky Joker
         ['name'] = 'Sticky Joker',
         ['text'] = {
             [1] = '{X:red,C:white}XMult{} equal to the current Ante'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 0,
-        y = 4
+        x = 8,
+        y = 3
     },
     cost = 8,
     rarity = 1,

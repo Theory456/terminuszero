@@ -11,11 +11,14 @@ SMODS.Joker{ --Grower Joker
             [1] = 'Scored cards give {C:blue}+10{} Chips',
             [2] = 'per {C:attention}Blind{} selected',
             [3] = '{C:inactive}(Currently:{} {C:blue}+#1# {} {C:inactive}Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 8,
+        y = 1
     },
     cost = 4,
     rarity = 1,

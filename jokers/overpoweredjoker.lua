@@ -10,10 +10,13 @@ SMODS.Joker{ --Overpowered Joker
         ['text'] = {
             [1] = '{X:red,C:white}X1{} Mult, scales by {X:attention,C:white}X1.62{}',
             [2] = 'when {C:attention}Blind{} is skipped'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 6,
+        x = 3,
         y = 2
     },
     cost = 16,

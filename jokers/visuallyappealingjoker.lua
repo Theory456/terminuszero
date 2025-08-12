@@ -12,10 +12,13 @@ SMODS.Joker{ --Visually Appealing Joker
             [2] = 'to the {C:money}money{} you own during the Blind',
             [3] = '{C:red}Destroy{} all scored{C:attention} number cards{}',
             [4] = '{C:red}-3{} Joker Slots while held'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 5
     },
     cost = 25,

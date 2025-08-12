@@ -11,10 +11,13 @@ SMODS.Joker{ --Superspeed Joker
             [1] = 'Scored cards give {X:red,C:white}X0.01{} Mult',
             [2] = 'per card scored',
             [3] = '{C:inactive}(Currently:{} {X:red,C:white}X#1#{} {C:inactive}Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 3,
+        x = 1,
         y = 4
     },
     cost = 10,

@@ -13,10 +13,13 @@ SMODS.Joker{ --Speedygrow Joker
             [2] = 'per card scored, which itself scores',
             [3] = 'by {C:red}+0.01{} when hand is played',
             [4] = '{C:inactive}(Currently:{} {C:red}+#1#{} {C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 7,
+        x = 4,
         y = 3
     },
     cost = 5,

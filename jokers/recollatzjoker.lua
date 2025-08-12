@@ -12,11 +12,14 @@ SMODS.Joker{ --Recollatz Joker
             [1] = '{X:red,C:white}X3{} Mult and {C:red}+1{} Mult when a card of',
             [2] = 'a random rank is played, reroll when triggered',
             [3] = '{C:inactive}(Currently: #1#){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 0,
-        y = 3
+        x = 6,
+        y = 2
     },
     cost = 7,
     rarity = 3,

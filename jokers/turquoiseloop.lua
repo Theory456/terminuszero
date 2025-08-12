@@ -10,6 +10,9 @@ SMODS.Joker{ --Turquoise Loop
         ['text'] = {
             [1] = '{C:red}+Mult{} equal to the {C:attention}current hour{}',
             [2] = '{C:inactive}(Currently: {C:red}+#1#{}{C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
@@ -32,7 +35,7 @@ SMODS.Joker{ --Turquoise Loop
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
-                    chips = os.date("*t", os.time()).hour
+                    mult = os.date("*t", os.time()).hour
                 }
         end
     end

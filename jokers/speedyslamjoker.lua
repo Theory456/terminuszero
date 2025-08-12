@@ -13,10 +13,13 @@ SMODS.Joker{ --Speedyslam Joker
             [2] = 'per card scored, which itself scores',
             [3] = 'by {C:red}+0.05{} when {C:attention}Blind{} is selected',
             [4] = '{C:inactive}(Currently:{} {C:red}+#1#{} {C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 8,
+        x = 5,
         y = 3
     },
     cost = 5,

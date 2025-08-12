@@ -3,23 +3,26 @@ SMODS.Joker{ --Duplilazer Joker
     config = {
         extra = {
             jscale = 1,
-            odds = 6
+            odds = 4
         }
     },
     loc_txt = {
         ['name'] = 'Duplilazer Joker',
         ['text'] = {
-            [1] = '{C:green}#2# in #3#{} chance to {C:attention}octuple{} {C:blue}+Chips{}',
-            [2] = 'at the end of the shop',
+            [1] = '{C:green}#2# in #3#{} chance to {C:attention}octuple{}',
+            [2] = '{C:blue}+Chips{} at the end of the shop',
             [3] = '{C:inactive}(Currently: {}{C:blue}+#1#{}{C:inactive} Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 0,
+        x = 1,
         y = 1
     },
     cost = 2,
-    rarity = 1,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

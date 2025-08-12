@@ -11,10 +11,13 @@ SMODS.Joker{ --Everyone
             [1] = '{C:inactive}(Oh, don\'t let go of me...{}',
             [2] = '{C:inactive}At last, you\'re here with me...){}',
             [3] = '{X:enhanced,C:white}^2.4{} Mult'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 1
     },
     cost = 20,

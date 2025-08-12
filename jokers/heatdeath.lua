@@ -12,13 +12,16 @@ SMODS.Joker{ --Heat Death
             [1] = '{X:enhanced,C:white}^1{} Mult every year away from',
             [2] = 'the {C:attention}Balatro Gameplay Update{} you are in',
             [3] = '{C:inactive}(Currently: {}{X:enhanced,C:white}^#1#{}{C:inactive} Mult){}',
-            [4] = '{C:inactive}(Archaeologists found two {}{X:legendary,C:white}Infinite{} {C:inactive}Jokers',
+            [4] = '{C:inactive}(Archaeologists found two {X:legendary,C:white}Infinite{} {C:inactive}Jokers',
             [5] = '{C:inactive}in what used to be the mod author\'s house.){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 2,
-        y = 2
+        x = 9,
+        y = 1
     },
     cost = 25,
     rarity = 4,

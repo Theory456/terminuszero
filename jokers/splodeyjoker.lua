@@ -10,10 +10,13 @@ SMODS.Joker{ --Splodey Joker
         ['text'] = {
             [1] = '{C:blue}+#1# {} Chips per card scored, the value becomes a',
             [2] = 'random number between 1 and 25 when triggered'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 9,
+        x = 6,
         y = 3
     },
     cost = 4,

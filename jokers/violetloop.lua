@@ -10,10 +10,13 @@ SMODS.Joker{ --Violet Loop
         ['text'] = {
             [1] = '{C:red}+Mult{} equal to the {C:attention}current month{}',
             [2] = '{C:inactive}(Currently: {C:red}+#1#{}{C:inactive} Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 2,
+        x = 3,
         y = 5
     },
     cost = 3,

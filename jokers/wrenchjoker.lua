@@ -1,21 +1,24 @@
-SMODS.Joker{ --Part-Time Salesperson
-    key = "parttimesalesperson",
+SMODS.Joker{ --Wrench Joker
+    key = "wrenchjoker",
     config = {
         extra = {
             jscale = 0
         }
     },
     loc_txt = {
-        ['name'] = 'Part-Time Salesperson',
+        ['name'] = 'Wrench Joker',
         ['text'] = {
             [1] = 'Played 2s through 5s give {C:red}+1{} Mult',
             [2] = 'for every {C:attention}Blind{} skipped',
             [3] = '{C:inactive}(Currently: {}{C:red}+#1# {}{C:inactive}Mult){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 7,
-        y = 2
+        x = 5,
+        y = 5
     },
     cost = 2,
     rarity = 1,

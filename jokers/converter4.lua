@@ -10,14 +10,17 @@ SMODS.Joker{ --Converter 4
         ['name'] = 'Converter 4',
         ['text'] = {
             [1] = '{X:red,C:white}X0.5{} Mult, but {C:blue}+2,000{} Chips'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 5,
+        x = 7,
         y = 0
     },
-    cost = 4,
-    rarity = 1,
+    cost = 6,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,

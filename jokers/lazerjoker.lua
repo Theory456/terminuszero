@@ -11,10 +11,13 @@ SMODS.Joker{ --Lazer Joker
         ['text'] = {
             [1] = '{C:green}#1# in #2#{} chance for {C:red}+12{} Mult',
             [2] = '{C:inactive}(Yes, this is really lazey.){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 4,
+        x = 0,
         y = 2
     },
     cost = 4,

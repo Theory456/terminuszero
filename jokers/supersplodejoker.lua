@@ -10,10 +10,13 @@ SMODS.Joker{ --Supersplode Joker
         ['text'] = {
             [1] = '{C:blue}+#1# {} Chips per card scored, the value adds a',
             [2] = 'random number between 1 and 10 when triggered'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 4,
+        x = 2,
         y = 4
     },
     cost = 7,

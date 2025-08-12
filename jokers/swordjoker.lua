@@ -1,5 +1,5 @@
-SMODS.Joker{ --Hall of Heroes
-    key = "hallofheroes",
+SMODS.Joker{ --Sword Joker
+    key = "swordjoker",
     config = {
         extra = {
             chips = 25,
@@ -7,16 +7,19 @@ SMODS.Joker{ --Hall of Heroes
         }
     },
     loc_txt = {
-        ['name'] = 'Hall of Heroes',
+        ['name'] = 'Sword Joker',
         ['text'] = {
             [1] = 'Playing exactly 50 base',
             [2] = 'chips in one hand gives',
             [3] = '{C:red}+5{} Mult and {C:blue}+25{} Chips'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 1,
-        y = 2
+        x = 4,
+        y = 4
     },
     cost = 5,
     rarity = 1,

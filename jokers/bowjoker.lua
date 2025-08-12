@@ -1,27 +1,27 @@
-SMODS.Joker{ --Duplicator Joker
-    key = "duplicatorjoker",
+SMODS.Joker{ --Bow Joker
+    key = "bowjoker",
     config = {
         extra = {
-            jscale = 1
+            jscale = 0
         }
     },
     loc_txt = {
-        ['name'] = 'Duplicator Joker',
+        ['name'] = 'Bow Joker',
         ['text'] = {
-            [1] = 'Double {C:blue}+Chips{} at the',
-            [2] = 'end of every {C:money}shop{}',
-            [3] = '{C:inactive}(Currently: {}{C:blue}+#1#{}{C:inactive} Chips){}'
+            [1] = 'Played {C:attention}Two Pairs{} give {C:red}+4{} Mult',
+            [2] = 'for every {C:attention}Blind{} selected',
+            [3] = '{C:inactive}(Currently: {}{C:red}+#1# {}{C:inactive}Mult){}'
         },
         ['unlock'] = {
             [1] = ''
         }
     },
     pos = {
-        x = 9,
+        x = 2,
         y = 0
     },
-    cost = 2,
-    rarity = 2,
+    cost = 1,
+    rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -34,18 +34,20 @@ SMODS.Joker{ --Duplicator Joker
     end,
 
     calculate = function(self, card, context)
-        if context.ending_shop  then
+        if context.setting_blind  then
                 return {
                     func = function()
-                    card.ability.extra.jscale = (card.ability.extra.jscale) * 2
+                    card.ability.extra.jscale = (card.ability.extra.jscale) + 4
                     return true
                 end
                 }
         end
         if context.cardarea == G.jokers and context.joker_main  then
+            if context.scoring_name == "Two Pair" then
                 return {
-                    chips = card.ability.extra.jscale
+                    mult = card.ability.extra.jscale
                 }
+            end
         end
     end
 }

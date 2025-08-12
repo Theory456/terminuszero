@@ -13,10 +13,13 @@ SMODS.Joker{ --Duplistick Joker
             [1] = '{C:green}#3# in #4#{} chance to multiply {C:blue}+Chips{}',
             [2] = 'by current ante at the end of the  shop',
             [3] = '{C:inactive}(Currently: {}{C:blue}+#1#{}{C:inactive} Chips){}'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 2,
+        x = 3,
         y = 1
     },
     cost = 2,

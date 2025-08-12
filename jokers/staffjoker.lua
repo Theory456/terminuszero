@@ -1,5 +1,5 @@
-SMODS.Joker{ --Forbidden Estate
-    key = "forbiddenestate",
+SMODS.Joker{ --Staff Joker
+    key = "staffjoker",
     config = {
         extra = {
             scaling = 0,
@@ -7,15 +7,18 @@ SMODS.Joker{ --Forbidden Estate
         }
     },
     loc_txt = {
-        ['name'] = 'Forbidden Estate',
+        ['name'] = 'Staff Joker',
         ['text'] = {
             [1] = 'Holding 46 base Chips in hand',
             [2] = 'gives {X:blue,C:white}X4.6{} Chips to played hand'
+        },
+        ['unlock'] = {
+            [1] = ''
         }
     },
     pos = {
-        x = 4,
-        y = 1
+        x = 7,
+        y = 3
     },
     cost = 5,
     rarity = 2,
