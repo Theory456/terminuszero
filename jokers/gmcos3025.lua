@@ -12,16 +12,16 @@ SMODS.Joker{ --GMC-OS 3025
         ['name'] = 'GMC-OS 3025',
         ['text'] = {
             [1] = '{C:red}+15{} Mult',
-            [2] = '{C:green}#1# in #2#{} chance for {X:red,C:white}X15{} Mult',
-            [3] = '{C:green}#3# in #4#{} chance to {C:red}destroy{} this card'
+            [2] = '{C:green}#3# in #4#{} chance for {X:red,C:white}X15{} Mult',
+            [3] = '{C:green}#1# in #2#{} chance to {C:red}destroy{} this card'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 8,
-        y = 1
+        x = 0,
+        y = 0
     },
     cost = 4,
     rarity = 1,
@@ -30,11 +30,11 @@ SMODS.Joker{ --GMC-OS 3025
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'Joker',
 
     loc_vars = function(self, info_queue, card)
-        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_terminus_gmcos3025')
-        local new_numerator2, new_denominator2 = SMODS.get_probability_vars(card, 1, card.ability.extra.odds2, 'j_terminus_gmcos3025')
+        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_modprefix_gmcos3025')
+        local new_numerator2, new_denominator2 = SMODS.get_probability_vars(card, 1, card.ability.extra.odds2, 'j_modprefix_gmcos3025')
         return {vars = {new_numerator, new_denominator, new_numerator2, new_denominator2}}
     end,
 
@@ -45,14 +45,14 @@ SMODS.Joker{ --GMC-OS 3025
                     mult = card.ability.extra.mult
                 ,
                     func = function()
-                        if SMODS.pseudorandom_probability(card, 'group_0_c826efdc', 1, card.ability.extra.odds, 'j_terminus_gmcos3025') then
+                        if SMODS.pseudorandom_probability(card, 'group_0_c826efdc', 1, card.ability.extra.odds, 'j_modprefix_gmcos3025') then
                       SMODS.calculate_effect({func = function()
                 card:start_dissolve()
                 return true
             end}, card)
                         card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Destroyed!", colour = G.C.RED})
                   end
-                    if SMODS.pseudorandom_probability(card, 'group_1_428288b9', 1, card.ability.extra.odds2, 'j_terminus_gmcos3025') then
+                    if SMODS.pseudorandom_probability(card, 'group_1_428288b9', 1, card.ability.extra.odds2, 'j_modprefix_gmcos3025') then
                       SMODS.calculate_effect({Xmult = card.ability.extra.Xmult}, card)
                   end
                         return true

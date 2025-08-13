@@ -21,7 +21,7 @@ SMODS.Joker{ --The Celestial
             [3] = 'The {C:common}first dimension{} produces {C:red}+Mult{}',
             [4] = 'Other dimensions produce the dimension',
             [5] = 'of the tier one lower than it',
-            [6] = '{C:inactive}(Currently: {}{C:red}+0{}{C:inactive} Mult){}',
+            [6] = '{C:inactive}(Currently: {}{C:red}+#9#{}{C:inactive} Mult){}',
             [7] = '',
             [8] = 'Your dimensions: {C:common}#1#{}, {C:uncommon}#2#{}, {C:rare}#3#{}, {C:spades}#4#{},',
             [9] = '{C:legendary}#5#{}, {C:dark_edition}#6#{}, {C:enhanced}#7#{}, {X:enhanced,C:white}#8#{}'
@@ -31,8 +31,8 @@ SMODS.Joker{ --The Celestial
         }
     },
     pos = {
-        x = 6,
-        y = 5
+        x = 0,
+        y = 0
     },
     cost = 10,
     rarity = 4,
@@ -41,14 +41,14 @@ SMODS.Joker{ --The Celestial
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'CustomJokers',
+    atlas = 'Joker',
     soul_pos = {
-        x = 7,
-        y = 5
+        x = 1,
+        y = 0
     },
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.dim1, card.ability.extra.dim2, card.ability.extra.dim3, card.ability.extra.dim4, card.ability.extra.dim5, card.ability.extra.dim6, card.ability.extra.dim7, card.ability.extra.dim8}}
+        return {vars = {card.ability.extra.dim1, card.ability.extra.dim2, card.ability.extra.dim3, card.ability.extra.dim4, card.ability.extra.dim5, card.ability.extra.dim6, card.ability.extra.dim7, card.ability.extra.dim8, card.ability.extra.jscale}}
     end,
 
     calculate = function(self, card, context)
@@ -63,7 +63,7 @@ SMODS.Joker{ --The Celestial
                 card.ability.extra.dim1 = (card.ability.extra.dim1) + card.ability.extra.dim2
                 card.ability.extra.jscale = (card.ability.extra.jscale) + card.ability.extra.dim1
                 return {
-                    chips = card.ability.extra.jscale
+                    mult = card.ability.extra.jscale
                 }
             end
         end
