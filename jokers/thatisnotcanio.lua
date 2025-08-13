@@ -2,18 +2,19 @@ SMODS.Joker{ --That Is Not Canio!
     key = "thatisnotcanio",
     config = {
         extra = {
-            req = 13,
+            req = 12,
             ignore = 0
         }
     },
     loc_txt = {
         ['name'] = 'That Is Not Canio!',
         ['text'] = {
-            [1] = '{C:red}Destroy{} all discarded face cards',
-            [2] = 'while the below effect is useless{}',
-            [3] = 'Selling this Joker after',
-            [4] = 'destroying {C:attention}13{} {C:inactive}(#1#){} face cards',
-            [5] = 'will fix the {C:red}problem{} with it'
+            [1] = '{C:red}Destroy{} a discarded hand if the',
+            [2] = 'hand contains only {C:attention}face cards{}',
+            [3] = 'while the below effect is useless{}',
+            [4] = 'Selling this Joker after',
+            [5] = 'destroying {C:attention}12{} {C:inactive}(#1#){} face cards',
+            [6] = 'will fix the {C:red}problem{} with it'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -44,7 +45,7 @@ SMODS.Joker{ --That Is Not Canio!
             local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
-                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_canio' })
+                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_caino' })
                     if joker_card then
                         
                         
@@ -73,17 +74,10 @@ SMODS.Joker{ --That Is Not Canio!
     end
     
     return rankFound
-end)() and (card.ability.extra.req or 0) ~= 0) then
+end)() and context.other_card:is_face() and (card.ability.extra.req or 0) ~= 0) then
                 return {
                     remove = true,
-                  message = "Destroyed!",
-                    extra = {
-                        func = function()
-                    card.ability.extra.req = math.max(0, (card.ability.extra.req) - 1)
-                    return true
-                end,
-                        colour = G.C.RED
-                        }
+                  message = "Destroyed!"
                 }
             end
         end
