@@ -20,8 +20,8 @@ SMODS.Joker{ --GMC-OS 3025
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 8,
+        y = 1
     },
     cost = 4,
     rarity = 1,
@@ -30,7 +30,7 @@ SMODS.Joker{ --GMC-OS 3025
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
+    atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
         local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_modprefix_gmcos3025')

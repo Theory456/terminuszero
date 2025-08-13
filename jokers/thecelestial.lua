@@ -31,8 +31,8 @@ SMODS.Joker{ --The Celestial
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 6,
+        y = 5
     },
     cost = 10,
     rarity = 4,
@@ -43,9 +43,10 @@ SMODS.Joker{ --The Celestial
     discovered = true,
     atlas = 'Joker',
     soul_pos = {
-        x = 1,
-        y = 0
+        x = 7,
+        y = 5
     },
+    atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.dim1, card.ability.extra.dim2, card.ability.extra.dim3, card.ability.extra.dim4, card.ability.extra.dim5, card.ability.extra.dim6, card.ability.extra.dim7, card.ability.extra.dim8, card.ability.extra.jscale}}
