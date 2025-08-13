@@ -77,7 +77,14 @@ SMODS.Joker{ --That Is Not Canio!
 end)() and context.other_card:is_face() and (card.ability.extra.req or 0) ~= 0) then
                 return {
                     remove = true,
-                  message = "Destroyed!"
+                  message = "Destroyed!",
+                    extra = {
+                        func = function()
+                    card.ability.extra.req = math.max(0, (card.ability.extra.req) - 1)
+                    return true
+                end,
+                        colour = G.C.RED
+                        }
                 }
             end
         end

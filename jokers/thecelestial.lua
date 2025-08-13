@@ -41,12 +41,11 @@ SMODS.Joker{ --The Celestial
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
+    atlas = 'CustomJokers',
     soul_pos = {
         x = 7,
         y = 5
     },
-    atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
         return {vars = {card.ability.extra.dim1, card.ability.extra.dim2, card.ability.extra.dim3, card.ability.extra.dim4, card.ability.extra.dim5, card.ability.extra.dim6, card.ability.extra.dim7, card.ability.extra.dim8, card.ability.extra.jscale}}

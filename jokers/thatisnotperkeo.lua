@@ -11,10 +11,10 @@ SMODS.Joker{ --That Is Not Perkeo!
         ['name'] = 'That Is Not Perkeo!',
         ['text'] = {
             [1] = 'Create {C:tarot}The Emperor{} for',
-            [2] = 'every {C:attention}High Card{} scored',
+            [2] = 'every {C:attention}#2#{} scored',
             [3] = '{C:inactive}(Must have room, poker hand',
-            [4] = 'changes every round, and will not work',
-            [5] = 'if the below effect can be performed){}',
+            [4] = '{C:inactive}changes every round, and will not work{}',
+            [5] = '{C:inactive}if the below effect can be performed){}{}',
             [6] = 'Selling this Joker after using {C:attention}69{} {C:inactive}(#1#){}',
             [7] = 'Consumables will fix the {C:red}problem{} with it'
         },
@@ -36,7 +36,7 @@ SMODS.Joker{ --That Is Not Perkeo!
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.req}}
+        return {vars = {card.ability.extra.req, card.ability.extra.Tarot}}
     end,
 
     set_ability = function(self, card, initial)

@@ -10,7 +10,7 @@ SMODS.Joker{ --Grower Joker
         ['text'] = {
             [1] = 'Scored cards give {C:blue}+10{} Chips',
             [2] = 'per {C:attention}Blind{} selected',
-            [3] = '{C:inactive}(Currently:{} {C:blue}+#1# {} {C:inactive}Chips){}'
+            [3] = '{C:inactive}(Currently:{} {C:blue}+#1#{} {C:inactive}Chips){}'
         },
         ['unlock'] = {
             [1] = ''

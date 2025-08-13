@@ -63,7 +63,7 @@ SMODS.Joker{ --That Is Not Triboulet!
             end
         end
         if context.individual and context.cardarea == G.play  then
-            if ((card.ability.extra.req or 0) ~= 0 and (context.other_card:get_id() == 12 and context.other_card:get_id() == 13)) then
+            if ((card.ability.extra.req or 0) ~= 0 and (context.other_card:get_id() == 12 or context.other_card:get_id() == 13)) then
                 card.ability.extra.req = math.max(0, (card.ability.extra.req) - 1)
                 return {
                     mult = card.ability.extra.mult
