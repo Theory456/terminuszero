@@ -16,7 +16,7 @@ SMODS.Joker{ --Superstick Joker
         }
     },
     pos = {
-        x = 3,
+        x = 8,
         y = 4
     },
     cost = 8,

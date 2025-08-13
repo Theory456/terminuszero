@@ -15,7 +15,7 @@ SMODS.Joker{ --Shuriken Joker
         }
     },
     pos = {
-        x = 0,
+        x = 5,
         y = 3
     },
     cost = 5,

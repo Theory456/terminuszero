@@ -17,8 +17,8 @@ SMODS.Joker{ --Wrench Joker
         }
     },
     pos = {
-        x = 5,
-        y = 5
+        x = 2,
+        y = 7
     },
     cost = 2,
     rarity = 1,

@@ -19,7 +19,7 @@ SMODS.Joker{ --Speedygrow Joker
         }
     },
     pos = {
-        x = 4,
+        x = 9,
         y = 3
     },
     cost = 5,

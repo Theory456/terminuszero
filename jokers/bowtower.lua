@@ -16,7 +16,7 @@ SMODS.Joker{ --Bow Tower
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 0
     },
     cost = 4,

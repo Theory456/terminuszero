@@ -18,8 +18,8 @@ SMODS.Joker{ --Quadruplicator Joker
         }
     },
     pos = {
-        x = 5,
-        y = 2
+        x = 0,
+        y = 3
     },
     cost = 5,
     rarity = 2,

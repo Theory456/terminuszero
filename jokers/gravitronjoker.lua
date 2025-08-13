@@ -16,8 +16,8 @@ SMODS.Joker{ --Gravitron Joker
         }
     },
     pos = {
-        x = 7,
-        y = 1
+        x = 0,
+        y = 2
     },
     cost = 5,
     rarity = 2,

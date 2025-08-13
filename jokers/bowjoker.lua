@@ -17,7 +17,7 @@ SMODS.Joker{ --Bow Joker
         }
     },
     pos = {
-        x = 2,
+        x = 3,
         y = 0
     },
     cost = 1,

@@ -16,7 +16,7 @@ SMODS.Joker{ --Maneinf
         }
     },
     pos = {
-        x = 1,
+        x = 4,
         y = 2
     },
     cost = 10,

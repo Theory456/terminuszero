@@ -18,7 +18,7 @@ SMODS.Joker{ --Gigatron Joker
         }
     },
     pos = {
-        x = 5,
+        x = 7,
         y = 1
     },
     cost = 5,

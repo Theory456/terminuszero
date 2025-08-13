@@ -10,14 +10,14 @@ SMODS.Joker{ --Speedy Joker
         ['text'] = {
             [1] = 'Scored cards give {C:red}+0.1{} Mult',
             [2] = 'per card scored',
-            [3] = '{C:inactive}(Currently:{} {C:red}+#1#{} {C:inactive} Mult){}'
+            [3] = '{C:inactive}(Currently:{} {C:red}+#1#{} {C:inactive}Mult){}'
         },
         ['unlock'] = {
             [1] = ''
         }
     },
     pos = {
-        x = 3,
+        x = 8,
         y = 3
     },
     cost = 4,

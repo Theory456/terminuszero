@@ -19,7 +19,7 @@ SMODS.Joker{ --Goner Captain
         }
     },
     pos = {
-        x = 6,
+        x = 9,
         y = 1
     },
     cost = 10,

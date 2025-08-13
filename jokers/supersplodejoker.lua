@@ -16,7 +16,7 @@ SMODS.Joker{ --Supersplode Joker
         }
     },
     pos = {
-        x = 2,
+        x = 7,
         y = 4
     },
     cost = 7,

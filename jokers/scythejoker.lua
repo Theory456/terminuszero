@@ -20,8 +20,8 @@ SMODS.Joker{ --Scythe Joker
         }
     },
     pos = {
-        x = 9,
-        y = 2
+        x = 4,
+        y = 3
     },
     cost = 2,
     rarity = 1,

@@ -16,8 +16,8 @@ SMODS.Joker{ --Splodey Joker
         }
     },
     pos = {
-        x = 6,
-        y = 3
+        x = 1,
+        y = 4
     },
     cost = 4,
     rarity = 1,

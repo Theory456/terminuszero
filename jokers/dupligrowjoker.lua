@@ -18,7 +18,7 @@ SMODS.Joker{ --Dupligrow Joker
         }
     },
     pos = {
-        x = 0,
+        x = 2,
         y = 1
     },
     cost = 2,

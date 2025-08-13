@@ -20,7 +20,7 @@ SMODS.Joker{ --Mery Nice Cavepaints
         }
     },
     pos = {
-        x = 2,
+        x = 5,
         y = 2
     },
     cost = 3,

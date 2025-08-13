@@ -1,27 +1,27 @@
-SMODS.Joker{ --s6 llA !spoO
-    key = "s6llaspoo",
+SMODS.Joker{ --Oops! All nils
+    key = "oopsallnils",
     config = {
         extra = {
-            mod_probability = 2,
-            denominator = 0
+            mod_probability = 0,
+            numerator = 0
         }
     },
     loc_txt = {
-        ['name'] = 's6 llA !spoO',
+        ['name'] = 'Oops! All nils',
         ['text'] = {
-            [1] = 'Doubles all {C:attention}listed{} {C:green}probabilities{}',
-            [2] = '(ex: {C:green}1 in 3{} -> {C:green}1 in 1.5{})'
+            [1] = 'All {C:attention}listed{} and mutable',
+            [2] = '{C:uncommon}probabilities{} become {C:red}zero{}'
         },
         ['unlock'] = {
-            [1] = ''
+            [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 2,
-        y = 3
+        x = 7,
+        y = 2
     },
-    cost = 4,
-    rarity = 2,
+    cost = 6,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -32,7 +32,7 @@ SMODS.Joker{ --s6 llA !spoO
     calculate = function(self, card, context)
           if context.mod_probability  then
           local numerator, denominator = context.numerator, context.denominator
-                  denominator = denominator / card.ability.extra.mod_probability
+                  numerator = numerator * card.ability.extra.mod_probability
         return {
           numerator = numerator, 
           denominator = denominator

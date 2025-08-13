@@ -16,7 +16,7 @@ SMODS.Joker{ --Dagger Joker
         }
     },
     pos = {
-        x = 8,
+        x = 9,
         y = 0
     },
     cost = 2,

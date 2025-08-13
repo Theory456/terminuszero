@@ -16,7 +16,7 @@ SMODS.Joker{ --Overpowered Joker
         }
     },
     pos = {
-        x = 3,
+        x = 8,
         y = 2
     },
     cost = 16,

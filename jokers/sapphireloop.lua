@@ -16,8 +16,8 @@ SMODS.Joker{ --Sapphire Loop
         }
     },
     pos = {
-        x = 8,
-        y = 2
+        x = 3,
+        y = 3
     },
     cost = 3,
     rarity = 1,

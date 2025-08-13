@@ -18,8 +18,8 @@ SMODS.Joker{ --Sword Joker
         }
     },
     pos = {
-        x = 4,
-        y = 4
+        x = 0,
+        y = 5
     },
     cost = 5,
     rarity = 1,

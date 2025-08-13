@@ -17,8 +17,8 @@ SMODS.Joker{ --Grower Joker
         }
     },
     pos = {
-        x = 8,
-        y = 1
+        x = 1,
+        y = 2
     },
     cost = 4,
     rarity = 1,

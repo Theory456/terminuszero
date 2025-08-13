@@ -17,8 +17,8 @@ SMODS.Joker{ --Ultralazer Joker
         }
     },
     pos = {
-        x = 9,
-        y = 4
+        x = 5,
+        y = 6
     },
     cost = 4,
     rarity = 1,

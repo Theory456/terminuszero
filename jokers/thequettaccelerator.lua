@@ -17,8 +17,8 @@ SMODS.Joker{ --The Quettaccelerator
         }
     },
     pos = {
-        x = 7,
-        y = 4
+        x = 0,
+        y = 6
     },
     cost = 2,
     rarity = 4,

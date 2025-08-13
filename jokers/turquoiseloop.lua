@@ -16,8 +16,8 @@ SMODS.Joker{ --Turquoise Loop
         }
     },
     pos = {
-        x = 8,
-        y = 4
+        x = 4,
+        y = 6
     },
     cost = 3,
     rarity = 1,

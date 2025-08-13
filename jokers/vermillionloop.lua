@@ -16,8 +16,8 @@ SMODS.Joker{ --Vermillion Loop
         }
     },
     pos = {
-        x = 2,
-        y = 5
+        x = 9,
+        y = 6
     },
     cost = 3,
     rarity = 1,

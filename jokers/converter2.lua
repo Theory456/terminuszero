@@ -16,7 +16,7 @@ SMODS.Joker{ --Converter 2
         }
     },
     pos = {
-        x = 5,
+        x = 6,
         y = 0
     },
     cost = 4,

@@ -19,8 +19,8 @@ SMODS.Joker{ --The Dyson Swarm
         }
     },
     pos = {
-        x = 6,
-        y = 4
+        x = 9,
+        y = 5
     },
     cost = 20,
     rarity = 4,

@@ -20,8 +20,8 @@ SMODS.Joker{ --Heat Death
         }
     },
     pos = {
-        x = 9,
-        y = 1
+        x = 2,
+        y = 2
     },
     cost = 25,
     rarity = 4,

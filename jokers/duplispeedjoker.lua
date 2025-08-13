@@ -2,7 +2,8 @@ SMODS.Joker{ --Duplispeed Joker
     key = "duplispeedjoker",
     config = {
         extra = {
-            jscale = 1
+            jscale = 1,
+            odds = 2
         }
     },
     loc_txt = {
@@ -17,7 +18,7 @@ SMODS.Joker{ --Duplispeed Joker
         }
     },
     pos = {
-        x = 2,
+        x = 4,
         y = 1
     },
     cost = 2,
@@ -30,7 +31,8 @@ SMODS.Joker{ --Duplispeed Joker
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.jscale}}
+        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_terminus_duplispeedjoker') 
+        return {vars = {card.ability.extra.jscale, new_numerator, new_denominator}}
     end,
 
     calculate = function(self, card, context)
@@ -40,7 +42,12 @@ SMODS.Joker{ --Duplispeed Joker
                 }
         end
         if context.individual and context.cardarea == G.play  then
-                card.ability.extra.jscale = (card.ability.extra.jscale) * 1.1
+            if true then
+                if SMODS.pseudorandom_probability(card, 'group_0_48a49846', 1, card.ability.extra.odds, 'j_terminus_duplispeedjoker') then
+                      card.ability.extra.jscale = (card.ability.extra.jscale) * 1.1
+                        
+                  end
+            end
         end
     end
 }

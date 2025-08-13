@@ -17,7 +17,7 @@ SMODS.Joker{ --Barricades
         }
     },
     pos = {
-        x = 1,
+        x = 2,
         y = 0
     },
     cost = 4,

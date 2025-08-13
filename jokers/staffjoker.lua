@@ -17,8 +17,8 @@ SMODS.Joker{ --Staff Joker
         }
     },
     pos = {
-        x = 7,
-        y = 3
+        x = 2,
+        y = 4
     },
     cost = 5,
     rarity = 2,

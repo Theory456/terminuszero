@@ -17,7 +17,7 @@ SMODS.Joker{ --Lazer Joker
         }
     },
     pos = {
-        x = 0,
+        x = 3,
         y = 2
     },
     cost = 4,

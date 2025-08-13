@@ -18,8 +18,8 @@ SMODS.Joker{ --Recollatz Joker
         }
     },
     pos = {
-        x = 6,
-        y = 2
+        x = 1,
+        y = 3
     },
     cost = 7,
     rarity = 3,

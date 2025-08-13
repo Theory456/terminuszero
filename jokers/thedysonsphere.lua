@@ -28,8 +28,8 @@ SMODS.Joker{ --The Dyson Sphere
         }
     },
     pos = {
-        x = 5,
-        y = 4
+        x = 8,
+        y = 5
     },
     cost = 20,
     rarity = 4,

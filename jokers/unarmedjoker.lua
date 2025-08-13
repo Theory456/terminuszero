@@ -17,8 +17,8 @@ SMODS.Joker{ --Unarmed Joker
         }
     },
     pos = {
-        x = 0,
-        y = 5
+        x = 6,
+        y = 6
     },
     cost = 1,
     rarity = 3,

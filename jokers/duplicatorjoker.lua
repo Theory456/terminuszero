@@ -17,8 +17,8 @@ SMODS.Joker{ --Duplicator Joker
         }
     },
     pos = {
-        x = 9,
-        y = 0
+        x = 1,
+        y = 1
     },
     cost = 2,
     rarity = 2,

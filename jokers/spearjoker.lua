@@ -18,7 +18,7 @@ SMODS.Joker{ --Spear Joker
         }
     },
     pos = {
-        x = 2,
+        x = 7,
         y = 3
     },
     cost = 9,
