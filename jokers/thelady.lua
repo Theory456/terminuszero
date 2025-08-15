@@ -1,25 +1,26 @@
-SMODS.Joker{ --The Celestial
-    key = "thecelestial",
+SMODS.Joker{ --The Lady
+    key = "thelady",
     config = {
         extra = {
-            Xmult = 2
+            echips = 1.1
         }
     },
     loc_txt = {
-        ['name'] = 'The Celestial',
+        ['name'] = 'The Lady',
         ['text'] = {
-            [1] = '{C:enhanced}Aegean{} {C:attention}8s{} give {X:red,C:white}X2{} Mult'
+            [1] = 'Aegean Cards give {X:enhanced,C:white}^1.1{} Chips',
+            [2] = 'when scored in a {C:attention}Straight{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 6,
-        y = 0
+        x = 2,
+        y = 2
     },
     cost = 4,
-    rarity = 2,
+    rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -27,15 +28,15 @@ SMODS.Joker{ --The Celestial
     discovered = true,
     atlas = 'CustomJokers',
     soul_pos = {
-        x = 7,
-        y = 0
+        x = 3,
+        y = 2
     },
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
-            if (context.other_card:get_id() == 8 and SMODS.get_enhancements(context.other_card)["m_terminus_aegean"] == true) then
+            if (context.scoring_name == "Straight" and SMODS.get_enhancements(context.other_card)["m_terminus_aegean"] == true) then
                 return {
-                    Xmult = card.ability.extra.Xmult
+                    e_chips = card.ability.extra.echips
                 }
             end
         end
